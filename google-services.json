@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "968201621249",
+    "firebase_url": "https://pusharr-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "pusharr",
+    "storage_bucket": "pusharr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968201621249:android:7436cd6310a9acad015500",
+        "android_client_info": {
+          "package_name": "com.pusharr.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968201621249-r3mddfg6naerf3jf2q0c9c3krvqnc02t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRxdqDoTsZ5e1akMaJugaaiOakIClKd_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968201621249-r3mddfg6naerf3jf2q0c9c3krvqnc02t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
