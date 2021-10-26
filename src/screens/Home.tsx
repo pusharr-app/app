@@ -3,10 +3,12 @@ import { Layout, TopNav, themeColor } from 'react-native-rapi-ui';
 import { Ionicons } from '@expo/vector-icons';
 import { Events } from '../components/Events';
 import { Button } from 'react-native-ui-lib';
-import { setupNotification } from '../token';
+import { usePushNotification } from '../hooks/usePushNotification';
 import { firebase } from '../firebase';
 
 export default function ({ navigation }) {
+  const { isSetup, isLoading, isInited, setupNotification } =
+    usePushNotification();
   return (
     <Layout>
       <TopNav
@@ -18,10 +20,13 @@ export default function ({ navigation }) {
           firebase.auth().signOut();
         }}
       />
-      <Button
-        onPress={() => setupNotification()}
-        label="Test push notifications 5"
-      />
+      {isInited && isSetup === false && (
+        <Button
+          disabled={isLoading}
+          onPress={setupNotification}
+          label="Start getting push notifications"
+        />
+      )}
       <Events />
     </Layout>
   );
